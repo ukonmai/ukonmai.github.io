@@ -115,7 +115,20 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
 .map-wrap iframe{width:100%;height:clamp(220px,35vw,380px);border:0;border-radius:6px;display:block}
 .map-caption{margin-top:0.5rem;font-size:clamp(0.68rem,1.2vw,0.82rem);color:#8b5a3a;text-align:center}
 .access-note{margin-top:1.8rem;padding:1.3rem 1.6rem;background-color:#ede0d0;border-radius:6px;border-left:4px solid #c49a5a;font-size:clamp(0.82rem,1.8vw,0.97rem);color:#8b5a3a;line-height:2;font-style:italic}
-/* スマホ */
+/* 道順ページ */
+.directions-list{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:2rem}
+.direction-step{display:flex;align-items:flex-start;gap:1.2rem;background-color:#faf6f0;border-radius:8px;padding:1.2rem;box-shadow:0 4px 16px rgba(44,26,14,0.07)}
+.step-num{width:40px;height:40px;border-radius:50%;background-color:#9e4028;color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.9rem;font-weight:500;flex-shrink:0;margin-top:2px}
+.step-photo{width:120px;min-width:120px;aspect-ratio:3/4;object-fit:cover;border-radius:6px;background-color:#ede0d0}
+.step-body{flex:1;min-width:0}
+.step-text{font-size:clamp(0.85rem,1.8vw,1rem);line-height:2;color:#2c1a0e;font-weight:400}
+.step-photo-large{width:240px;min-width:240px;aspect-ratio:3/4;object-fit:cover;border-radius:6px;background-color:#ede0d0}
+@media(max-width:540px){
+  .direction-step{flex-wrap:wrap}
+  .step-photo{width:100%;min-width:0;aspect-ratio:3/4;object-fit:cover}
+  .step-photo-large{width:100%;min-width:0;aspect-ratio:3/4;object-fit:cover}
+}
+
 
 @media(max-width:600px){
   nav{height:auto;flex-direction:column;align-items:center;padding:0.5rem 1rem;gap:0.3rem}
@@ -296,6 +309,30 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
   </div>
   <div class="access-note reveal">「求めなさい。そうすれば与えられる。叩きなさい。そうすれば開かれる。」— マタイ7:7<br>ご来店の際はお気軽にお電話またはメールでお問い合わせください。初めての方も大歓迎です。</div>
 </div></section>
+
+<!-- 道順セクション（日本語） -->
+<section class="sec" style="background-color:#f5ede3"><div class="inner">
+  <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,4vw,2.5rem);font-weight:400;color:#5c3520;text-align:center;margin-bottom:0.4rem">道順</h2>
+  <p class="reveal" style="text-align:center;font-size:clamp(0.78rem,1.5vw,0.92rem);color:#8b5a3a;margin-bottom:2.5rem">八広駅 南口からの道順</p>
+  <div class="directions-list">
+    <div class="direction-step reveal"><div class="step-num">1</div><img class="step-photo" src="d_1.png" alt="ステップ1"><div class="step-body"><p class="step-text">改札を出たら左へ曲がります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">2</div><img class="step-photo" src="d_2.png" alt="ステップ2"><div class="step-body"><p class="step-text">南口を降ります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">3</div><img class="step-photo" src="d_3.png" alt="ステップ3"><div class="step-body"><p class="step-text">降りたら斜め左へ進みます。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">4</div><img class="step-photo" src="d_4.png" alt="ステップ4"><div class="step-body"><p class="step-text">直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">5</div><img class="step-photo" src="d_5.png" alt="ステップ5"><div class="step-body"><p class="step-text">大通りまで来たら左へ曲がります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">6</div><img class="step-photo" src="d_6.png" alt="ステップ6"><div class="step-body"><p class="step-text">直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">7</div><img class="step-photo" src="d_7.png" alt="ステップ7"><div class="step-body"><p class="step-text">右へ曲がり横断歩道を渡ります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">8</div><img class="step-photo" src="d_8.png" alt="ステップ8"><div class="step-body"><p class="step-text">右へ曲がり直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">9</div><img class="step-photo" src="d_9.png" alt="ステップ9"><div class="step-body"><p class="step-text">左へ曲がります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">10</div><img class="step-photo" src="d_10.png" alt="ステップ10"><div class="step-body"><p class="step-text">直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">11</div><img class="step-photo" src="d_11.png" alt="ステップ11"><div class="step-body"><p class="step-text">斜め右へ進みます。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">12</div><img class="step-photo" src="d_12.png" alt="ステップ12"><div class="step-body"><p class="step-text">直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">13</div><img class="step-photo" src="d_13.png" alt="ステップ13"><div class="step-body"><p class="step-text">左へ曲がり直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">14</div><img class="step-photo" src="d_14.png" alt="ステップ14"><div class="step-body"><p class="step-text">左の道路を直進します。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">15</div><img class="step-photo" src="d_15.png" alt="ステップ15"><div class="step-body"><p class="step-text">この電柱の横にある建物が教会になります。</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">16</div><img class="step-photo-large" src="d_16.png" alt="ステップ16"><div class="step-body"><p class="step-text">教会に着きました！</p></div></div>
+  </div>
+</div></section>
 </div>
 
 <!-- ENGLISH VERSION -->
@@ -443,6 +480,30 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
   <div class="access-note reveal">
     "Ask and it will be given to you; knock and the door will be opened to you." — Matthew 7:7<br>
     Please feel free to contact us by phone or email before visiting. First-time visitors are very welcome.
+  </div>
+</div></section>
+
+<!-- Directions section (English) -->
+<section class="sec" style="background-color:#f5ede3"><div class="inner">
+  <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,4vw,2.5rem);font-weight:400;color:#5c3520;text-align:center;margin-bottom:0.4rem">Directions</h2>
+  <p class="reveal" style="text-align:center;font-size:clamp(0.78rem,1.5vw,0.92rem);color:#8b5a3a;margin-bottom:2.5rem">Walking directions from Yahiro Station (South Exit)</p>
+  <div class="directions-list">
+    <div class="direction-step reveal"><div class="step-num">1</div><img class="step-photo" src="d_1.png" alt="Step 1"><div class="step-body"><p class="step-text">Exit through the ticket gates and turn left.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">2</div><img class="step-photo" src="d_2.png" alt="Step 2"><div class="step-body"><p class="step-text">Take the stairs down to the South Exit.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">3</div><img class="step-photo" src="d_3.png" alt="Step 3"><div class="step-body"><p class="step-text">Once outside, head diagonally to the left.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">4</div><img class="step-photo" src="d_4.png" alt="Step 4"><div class="step-body"><p class="step-text">Continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">5</div><img class="step-photo" src="d_5.png" alt="Step 5"><div class="step-body"><p class="step-text">When you reach the main road, turn left.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">6</div><img class="step-photo" src="d_6.png" alt="Step 6"><div class="step-body"><p class="step-text">Continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">7</div><img class="step-photo" src="d_7.png" alt="Step 7"><div class="step-body"><p class="step-text">Turn right and cross at the pedestrian crossing.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">8</div><img class="step-photo" src="d_8.png" alt="Step 8"><div class="step-body"><p class="step-text">Turn right and continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">9</div><img class="step-photo" src="d_9.png" alt="Step 9"><div class="step-body"><p class="step-text">Turn left.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">10</div><img class="step-photo" src="d_10.png" alt="Step 10"><div class="step-body"><p class="step-text">Continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">11</div><img class="step-photo" src="d_11.png" alt="Step 11"><div class="step-body"><p class="step-text">Head diagonally to the right.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">12</div><img class="step-photo" src="d_12.png" alt="Step 12"><div class="step-body"><p class="step-text">Continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">13</div><img class="step-photo" src="d_13.png" alt="Step 13"><div class="step-body"><p class="step-text">Turn left and continue straight ahead.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">14</div><img class="step-photo" src="d_14.png" alt="Step 14"><div class="step-body"><p class="step-text">Continue straight along the road on the left.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">15</div><img class="step-photo" src="d_15.png" alt="Step 15"><div class="step-body"><p class="step-text">The building beside the utility pole is the church.</p></div></div>
+    <div class="direction-step reveal"><div class="step-num">16</div><img class="step-photo-large" src="d_16.png" alt="Step 16"><div class="step-body"><p class="step-text">You have arrived at the church!</p></div></div>
   </div>
 </div></section>
 </div>
