@@ -161,6 +161,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
     <li><button class="nav-btn" data-page="about">教会</button></li>
     <li><button class="nav-btn" data-page="roasting">コーヒー</button></li>
     <li><button class="nav-btn" data-page="access">アクセス</button></li>
+    <li><button class="nav-btn" data-page="schedule">イベント</button></li>
     <li><button class="nav-btn lang-btn" data-page="en-home" id="lang-toggle" style="color:#9e4028;border-bottom-color:#9e4028;opacity:1">ENGLISH</button></li>
   </ul>
 </nav>
@@ -191,6 +192,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
   <div class="intro-grid">
     <button class="intro-card reveal" data-page="about"><div class="intro-icon">&#x271D;</div><h3>教会</h3><p>礼拝・バイブルスタディ・BBQなど。クリスチャンでなくても、どなたでも大歓迎です。</p><span class="intro-card-link">詳しく見る →</span></button>
     <button class="intro-card reveal" data-page="roasting"><div class="intro-icon">&#x2615;</div><h3>コーヒー</h3><p>生豆から約10〜15分。焙煎士が祈りを込めてあなただけの一杯を焙煎します。</p><span class="intro-card-link">詳しく見る →</span></button>
+    <button class="intro-card reveal" data-page="schedule"><div class="intro-icon">&#x1F4C5;</div><h3>イベント</h3><p>礼拝・イベント・各種集会の情報はこちらでご確認いただけます。</p><span class="intro-card-link">詳しく見る →</span></button>
   </div>
 </section>
 </div>
@@ -339,24 +341,28 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
 </div>
 
 <!-- SCHEDULE -->
-</section>
+<div id="page-schedule" class="page">
+<div class="page-header"><h1>イベント</h1><p class="sub">礼拝・イベント・各種集会のご案内</p><div class="page-rule"></div></div>
+<section class="sec" style="background-color:#faf6f0"><div class="inner">
+  <div class="reveal" style="text-align:center;margin-bottom:1.5rem">
+    <p style="font-size:clamp(0.82rem,1.8vw,0.97rem);color:#5c3520;line-height:2">最新のイベント情報をご確認ください。<br>ご不明な点はお気軽にお問い合わせください。</p>
+  </div>
+  <div class="reveal" style="max-width:1000px; margin:0 auto; overflow:hidden; border-radius:8px; border:1px solid #ccc;">
+    <div style="height: 516px; overflow: hidden; position: relative;">
+      <iframe src="https://calendar.google.com/calendar/embed?src=cd835c462f14f55e67cf32087da1cf1d748cd83166491022b53fb0d985e545fb%40group.calendar.google.com&ctz=Asia%2FTokyo&color=%23ede0d0&hl=ja&showNav=0&showTitle=0&showTz=0&showPrint=0&showTabs=0&showCalendars=0&mode=AGENDA"
+              style="border:0; position: absolute; top: -48px; left: 0;"
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no">
+      </iframe>
+    </div>
+  </div>
+</div></section>
 </div>
 
 <style>
-.cal-day{min-height:110px;background:#fff;border-radius:6px;padding:6px;position:relative;cursor:pointer;transition:background 0.2s;overflow:hidden}
-.cal-day:hover{background:#faf6f0}
-.cal-day.other-month{background:#faf6f0;opacity:0.5}
-.cal-day.today .cal-date{background:#9e4028;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
-.cal-date{font-size:0.9rem;font-weight:600;color:#5c3520;margin-bottom:4px;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
-.cal-day.sunday .cal-date{color:#c0392b}
-.cal-day.saturday .cal-date{color:#2471a3}
-.cal-event-dot{background:#9e4028;color:#fff;font-size:0.72rem;border-radius:3px;padding:3px 5px;margin-top:3px;line-height:1.5;display:block;font-weight:500;max-width:100%;box-sizing:border-box;word-break:break-all}
-.event-item{background:#fff;border-left:4px solid #9e4028;border-radius:6px;padding:0.8rem 1rem;margin-bottom:0.8rem;box-shadow:0 2px 8px rgba(44,26,14,0.08)}
-.event-item .event-title{font-weight:700;color:#5c3520;font-size:1rem}
-.event-item .event-time{color:#9e4028;font-size:0.85rem;margin-top:0.2rem}
-.event-item .event-desc{color:#7a5c4a;font-size:0.85rem;margin-top:0.3rem}
-@media(max-width:600px){
-  .cal-day{min-height:80px;padding:3px}
+
   .cal-event-dot{font-size:0.55rem;padding:2px 2px;line-height:1.4}
   .cal-date{font-size:0.75rem;width:20px;height:20px}
 }
@@ -392,6 +398,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
   <div class="intro-grid">
     <button class="intro-card reveal" data-page="en-church"><div class="intro-icon">&#x271D;</div><h3>CHURCH</h3><p>Worship, Bible study, BBQ and more. Everyone is welcome, regardless of faith.</p><span class="intro-card-link">Learn more →</span></button>
     <button class="intro-card reveal" data-page="en-coffee"><div class="intro-icon">&#x2615;</div><h3>COFFEE</h3><p>From green beans to your cup in 10–15 minutes. Roasted with prayer, just for you.</p><span class="intro-card-link">Learn more →</span></button>
+    <button class="intro-card reveal" data-page="en-schedule"><div class="intro-icon">&#x1F4C5;</div><h3>EVENTS</h3><p>Check our latest worship services, events and gatherings here.</p><span class="intro-card-link">Learn more →</span></button>
   </div>
 </section>
 </div>
@@ -542,7 +549,26 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
 </div>
 
 <!-- FOOTER -->
-</section>
+<div id="page-en-schedule" class="page">
+<div class="page-header"><h1>Events</h1><p class="sub">Worship services, events and gatherings</p><div class="page-rule"></div></div>
+<section class="sec" style="background-color:#faf6f0"><div class="inner">
+  <div class="reveal" style="text-align:center;margin-bottom:1.5rem">
+    <p style="font-size:clamp(0.82rem,1.8vw,0.97rem);color:#5c3520;line-height:2">Check our latest events and gatherings.<br>Feel free to contact us if you have any questions.</p>
+    <div style="margin-top:1rem">
+    </div>
+  </div>
+  <div class="reveal" style="max-width:1000px; margin:0 auto; overflow:hidden; border-radius:8px; border:1px solid #ccc;">
+    <div style="height: 516px; overflow: hidden; position: relative;">
+      <iframe src="https://calendar.google.com/calendar/embed?src=cd835c462f14f55e67cf32087da1cf1d748cd83166491022b53fb0d985e545fb%40group.calendar.google.com&ctz=Asia%2FTokyo&color=%23ede0d0&hl=ja&showNav=0&showTitle=0&showTz=0&showPrint=0&showTabs=0&showCalendars=0&mode=AGENDA"
+              style="border:0; position: absolute; top: -48px; left: 0;"
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no">
+      </iframe>
+    </div>
+  </div>
+</div></section>
 </div>
 
 <!-- FOOTER -->
@@ -559,6 +585,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
         <li><button class="footer-nav-btn" data-page="about">教会</button></li>
         <li><button class="footer-nav-btn" data-page="roasting">コーヒー</button></li>
         <li><button class="footer-nav-btn" data-page="access">アクセス</button></li>
+        <li><button class="footer-nav-btn" data-page="schedule">イベント</button></li>
         <li><button class="footer-nav-btn lang-btn" data-page="en-home" style="color:#c49a5a">ENGLISH</button></li>
       </ul>
     </div>
@@ -581,6 +608,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
       <li><button class="footer-nav-btn" data-page="en-church">CHURCH</button></li>
       <li><button class="footer-nav-btn" data-page="en-coffee">COFFEE</button></li>
       <li><button class="footer-nav-btn" data-page="en-access">ACCESS</button></li>
+      <li><button class="footer-nav-btn" data-page="en-schedule">EVENTS</button></li>
       <li><button class="footer-nav-btn lang-btn" data-page="home" style="color:#c49a5a">日本語</button></li>
     </ul>
   </div>
@@ -596,7 +624,7 @@ footer{background-color:#2c1a0e;color:rgba(245,237,227,0.7)}
 
 <script>
 var currentLang = 'ja';
-var jaToEn = {'home':'en-home','about':'en-church','roasting':'en-coffee','access':'en-access'};
+var jaToEn = {'home':'en-home','about':'en-church','roasting':'en-coffee','access':'en-access','schedule':'en-schedule'};
 var enToJa = {};
 Object.keys(jaToEn).forEach(function(k){ enToJa[jaToEn[k]]=k; });
 
